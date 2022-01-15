@@ -1,13 +1,19 @@
-/* google font link */
+/*==================
+ google font link
+ ================== */
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Oswald:wght@400;600&family=Poppins:wght@500&family=Roboto&family=Source+Sans+Pro:wght@400;600&display=swap');
 
-/* universel style */
+/*===============
+ universel style 
+ ===============*/
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
 }
-/* universel style */
+/*============
+ universel style
+ ============== */
 body{
     background-color: #FFFFFF;
     font-family: 'Source Sans Pro', sans-serif;
@@ -17,7 +23,9 @@ body{
     align-items: center;
     flex-direction: column;
 }
-/* header part start */
+/*=================
+ header part start
+ ===================*/
 .containar{
     max-width: 1200px;
     margin: 0 auto;
@@ -47,6 +55,9 @@ body{
     padding: 15px 23px;
     font-weight: 600;
 }
+/* ==============
+first section styles 
+==================*/
 .influencer-raper{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -77,12 +88,55 @@ body{
     color: white;
     margin-top: 15px;
 }
-.influencer-img{display: flex;align-items: center;justify-content: center;}
-/* first section part */
+.influencer-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    width: 600px;
+    margin-top: 50px;
+    margin-left: 50px;
+    border: 25px solid;
+    border-image: linear-gradient(
+        90deg  ,#ef3f70,#222222,#6e91ef);
+    border-image-slice: 1;
+    animation-name: slider;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+/*=============
+ animation part
+ ============== */
+@keyframes slider {
+    0%{
+        border:25px solid;
+        border-image: linear-gradient(
+        90deg,#6e91ef,#ef3f70,#222222);
+        
+    }
+    50%{
+        border:5px solid;
+        border-image: linear-gradient(
+      90deg,#ef3f70,#6e91ef,#222222);
+        
+            
+            
+    }
+    100%{
+        border-image: linear-gradient(
+            90deg,#ef3f70,#222222,#6e91ef);
+      
+       
+    }
+}
+/*==============
+ second section part
+ ================ */
 .containar-2{
     width: 1000px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 .section-title-2{
     text-align: center;
@@ -137,7 +191,9 @@ h2.product-title {
     font-family: roboto;
     margin-top: 7px;
 }
-/* another section start */
+/*================
+ third section styles
+ =================== */
 .update-detail {
     display: grid;
     grid-template-columns:repeat(2,1fr);
@@ -209,11 +265,12 @@ footer a {
     .influencer-raper,.products-details,.update-detail{
         grid-template-columns: repeat(1,1fr);
     }
-    .influencer-raper{
-        margin-left: 334px;
+ 
+    .containar-2{
+        width: 100%;
     }
-    .update-detail{
-    margin-left: 150px;
+    .containar{
+        width: 100%;
     }
     .raper{
         margin-bottom: 50px;
@@ -233,14 +290,14 @@ footer a {
     .influencer-raper,.products-details,.update-detail{
         grid-template-columns: repeat(2,1fr);
     }
-    
+    .containar{
+        width: 100%;
+    }
+    .containar-2{
+        width: 100%;
+    }
     .products-info{
         margin: 0 auto;
     }
-    .influencer-raper{
-        margin-left: 300px;
-    }
-     .update-detail{
-        margin-left: 100px;
-        }
+    
 }
