@@ -224,14 +224,14 @@
      align-items: flex-start;
  }
  
- h1.update-title-1 {
+ .update-title-1 {
      font-size: 40px;
      margin-bottom: 14px;
      font-family: arial;
      color: #343434;
  }
  
- h2.update-title-2 {
+ .update-title-2 {
      font-size: 25px;
  }
  
